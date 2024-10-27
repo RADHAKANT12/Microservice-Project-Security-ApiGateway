@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: CLIENT-SERVICE
+
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/mssecurityapigtwy
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  instance:
+    client:
+      serverUrl:
+        defaultZone:  http://localhost:8761/eureka/
